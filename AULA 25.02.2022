@@ -1,0 +1,56 @@
+#Calcule as notas
+'''
+portugues = float (input("Digite a nota de Português: "))
+matematica = float (input("Digite a nota de Matemática: "))
+biologia = float (input("Digite a nota de Biologia: "))
+
+media = (portugues + matematica + biologia)/3
+soma_das_notas = (portugues + matematica + biologia)
+
+
+print("A soma das notas de Português, Matemática e Biologia é:", soma_das_notas)
+print("A média das notas é:", media)
+
+
+if media <=3:
+    print("reprovado")
+if media >=3 <6:
+    print("exame")
+if media >6:
+    print("aprovado")
+
+print ("Sua média é " + str(media))
+print (f"Sua média é : {media}")
+print (f"A média de {portugues}, {matematica}, {biologia} é: {media:3.2f}")
+
+
+if media <=3:
+    print("reprovado")
+elif media>=3 <6:
+    print("exame")
+else:
+    print("aprovado")
+
+
+
+#nome = int(input("Digite o seu nome: ")
+nome = str(input("Digite seu nome: "))
+salario = int(input(f"{nome} digite o seu salario: R$ "))
+dependentes = int(input("Digite o número de dependentes: "))
+
+#Condição da pessoa pagar ou não pagar o imposto
+
+if salario <3000:
+    print(f"{nome}, você está ISENTO de pagar IR")
+else:
+    print(f"{nome}, você deverá PAGAR O IMPOSTO DE RENDA 2022")
+    IR = (salario - (salario * 0.1) - dependentes * 190)*0.25-350
+    print(f"{nome}, o valor devido de IMPOSTO DE RENDA é R$: {IR}")
+   
+'''    
+
+nome = "Nathalia"
+for x in nome:
+    print(x)
+for x in range(5,10):
+    print(x)
