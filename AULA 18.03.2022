@@ -1,0 +1,53 @@
+#EXEMPLO 1: UMA FUNCAO SEM PARAMETROS
+
+print ('Hello World\n')
+
+def funcao():
+    print ("oi\n")
+    return
+funcao()
+
+#EXEMPLO 1: UMA FUNCAO COM PARAMETROS
+
+def soma(x, y):
+    print(x+y)
+    return
+valor1 = 10
+valor2 = 20
+
+soma(valor1,valor2)
+
+
+def fahrenheit(celsius):
+    convertido = celsius * 9 / 5 + 32
+    print(f"A temperatura {celsius} celsius convertida em fahrenheit é: {convertido}")
+    return(convertido)
+   
+fahrenheit(25)
+
+def quadrada(): #criei uma função chamada quadarada rque recebe um número
+    num = int(input("Digite o valor: ")) #adiciona um valor pelo usuário
+    raiz = num **2 # cálculo do valor informado
+    return(raiz) #retorno da função criada
+
+print(quadrada()) #chama a função
+
+
+#EXERCÍCIO 2 - RECEBA DOIS NÚMEROS E RETORNE O MAIOR SEM MATH
+
+x = int(input("Digite o primeiro valor: ")) #adiciona um valor pelo usuário
+y = int(input("Digite o segundo valor: ")) #adiciona um valor pelo usuário
+
+def maior(x,y):
+   
+    if (x >= y):
+        mais = x
+    elif (x <= y):
+        mais = y
+    else:
+        maior = x
+    return(mais)
+
+
+print(maior(x,y))
+'''
