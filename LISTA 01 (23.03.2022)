@@ -1,0 +1,62 @@
+#media.
+
+x1 = int(input("Digite o 1º número: "))
+x2 = int(input("Digite o 2º número: "))
+
+media = (x1 + x2)/2
+
+print(media)
+
+
+#IMC.
+
+peso=float(input("Informe seu peso: \n"))
+altura=float(input("Informe sua altura (em metros): \n"))
+
+IMC = peso/(altura*altura)
+
+if IMC < 18.5:
+  print("Abaixo do peso normal")
+elif 18.5 < IMC < 24.9:
+  print("Peso normal")
+elif 25 < IMC < 29.9:
+  print("Sobrepeso")
+elif 30 < IMC < 34.9:
+  print("Obesidade de Grau 1")
+elif 35 < IMC < 39.9:
+  print("Obesidade de Grau 2")
+else:
+  print("Obesidade de Grau 3")
+
+print(f"Seu IMC é de {IMC:.2f}")
+
+
+#volume.
+
+altura=float(input("Informe a altura da lata de óleo (em centímetros): "))
+R=float(input("Informe o raio da lata de óleo (em centímetros): "))
+
+vol = 3.14159 * R**2 * altura
+print(f"O volume da lata de óleo é de {vol:.2f}³")
+
+
+#numero maior.
+
+valores = []
+for x in range(0,5):
+  num=float(input(f"Informe o {x+1}º valor: "))
+  valores.append(num)
+
+print(max(valores))
+
+#consumo médio 
+
+litros_por_km=int(input("Informe os litros por km: "))
+tempo=int(input("Informe o tempo gasto (em horas): "))
+velocidade=int(input("Informe a velocidade média (em KM/h): "))
+
+distancia = tempo * velocidade
+
+litros_usados = distancia / litros_por_km
+
+print()
