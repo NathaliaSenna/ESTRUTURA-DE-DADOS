@@ -1,0 +1,17 @@
+#criar uma funcao que receba os catetos e devolva a hipotenusa
+
+
+import math #Importada a biblioteca math
+
+
+
+x = int(input("Digite o valor do cateto oposto: ")) #adiciona um valor pelo usuário
+y = int(input("Digite o valor do cateto adjacente: ")) #adiciona um valor pelo usuário
+
+def hipotenusa(x,y):
+    hipotenusa=(math.hypot(x,y)) #utulizacao da funcao math no auxilio do calculo da hipotenusa
+    return(hipotenusa) # retorna o calculo da hipotenusa
+ 
+print(hipotenusa(x,y)) #print hipotenusa
+
+print(x,y) # print valores de catetos digitados
